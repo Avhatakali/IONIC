@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      HOME
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    
+  <div class="cont">
+    
+ <ion-item>
+    <ion-label color="primary" floating>HOME</ion-label>
+    <ion-input type="text" #home ></ion-input>
+ </ion-item>   
+    
+<ion-item>
+    <ion-label color="primary" floating>AWAY</ion-label>
+    <ion-input type="text" #away ></ion-input>
+  </ion-item>
+    <div class="btn">
+      <button ion-button color="secondary" type="submit" block  (click) = "addTeam( home.value, away.value)">START</button>
+    </div>
+
+  </div>
+
 </ion-content>

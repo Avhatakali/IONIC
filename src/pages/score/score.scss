@@ -1,0 +1,82 @@
+page-score {
+margin: 0;
+padding: 0;
+font-size: 1em;
+}
+
+toolbar{
+    text-align: center;
+    height: 10%;
+}
+
+.wrap{
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+}
+.grid-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .grid-container :hover{
+      background-color:hsl(120,100%,50%);
+  }
+
+.button{
+    grid-column-gap: 10px;
+    text-align: center;
+}
+
+.big_btn{
+width: 250px;
+margin-top: -2px;
+margin-bottom: -2px;
+}
+
+.small_btn{
+width: 50px;
+margin-top: -2px;
+margin-bottom: -2px;
+}
+
+.big_btn :hover{
+    background-color: hsl(120,100%,50%);
+}
+
+.small_btn :hover{
+    background-color: rgb(255, 47, 47);
+}
+
+.labelScore{
+    font-size: 100px;
+}
+
+.labelName{
+    font-size: 24px;
+}
+
+.name{
+font-size: 14px;
+}
+
+.reset :hover{
+background-color: red;
+}
+
+.reset{
+    width: 313px;
+    margin-left: 6px;
+    margin-right: 8px;
+    text-align: center;
+}
+
