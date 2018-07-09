@@ -1,3 +1,5 @@
 
 var arr = new Array() ;
-export default arr ;
+
+var score = new Array();
+export default score;

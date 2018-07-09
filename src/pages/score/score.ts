@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home'
 import arr from '../../app/Team';
+import  score from '../../app/Team';
 import { Task } from '../../app/Task';
+import { gameScore } from '../../app/Task'
 
 
 /**
@@ -25,18 +27,34 @@ export class ScorePage {
   awayScore = 0;
 
   arrTeam = arr;
+  arrScore = score;
+ 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ScorePage');
   }
 
-  //method for scores
+  //method for scores addition
 
   box(num){
     this.Team=num;
   }
+
+//adding score to Array
+addScore = function(penalty, tryScore, conversion ){
+
+  let obj = new gameScore(penalty, tryScore, conversion );
+  
+  console.log(obj);
+
+  if(obj != null){
+    score.push(obj);
+      }
+}
+
       tryScore (){
         if(this.Team==1){
           this.homeScore+=5;
@@ -69,7 +87,7 @@ export class ScorePage {
         this.navCtrl.setRoot(HomePage);
       }
 
-
+// reversing scores incase of mistake
       trySub (){
         if(this.Team==1){
           this.homeScore-=5;
