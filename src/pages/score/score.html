@@ -46,33 +46,33 @@
   <div class="button">
     <ion-row>
         <ion-col>
-            <button ion-button class="big_btn" block type="submit" (click)="addScore (home.value)" >TRY</button>
+            <button ion-button class="big_btn" block type="submit" (click)="addScore (5)" >TRY</button>
             
         </ion-col>
         <ion-col>
-            <button ion-button class="small_btn"><ion-icon name="undo" (click)="trySub ()"></ion-icon></button>
+            <button ion-button class="small_btn"><ion-icon name="undo" type="submit" (click)="subScore (5)"></ion-icon></button>
         </ion-col>
     </ion-row>
 
     <ion-row>
         <ion-col>
-            <button ion-button block class="big_btn" (click)="penaltyScore ()">PENALTY</button>
+            <button ion-button block class="big_btn" type="submit" (click)="addScore (3)">PENALTY</button>
         </ion-col>
         <ion-col>
-            <button ion-button class="small_btn"><ion-icon name="undo" (click)="penaltySub ()"></ion-icon></button><br>
+            <button ion-button class="small_btn"><ion-icon name="undo" type="submit" (click)="subScore (3)"></ion-icon></button><br>
         </ion-col>
     </ion-row>
 
     <ion-row>
           <ion-col>
-              <button ion-button block class="big_btn" (click)="conversionScore ()">CONVERSION</button>
+              <button ion-button block class="big_btn" type="submit" (click)="addScore (2)">CONVERSION</button>
           </ion-col>
           <ion-col>
-              <button ion-button class="small_btn"><ion-icon name="undo" (click)="conversionSub ()"></ion-icon></button>
+              <button ion-button class="small_btn"><ion-icon name="undo" type="submit" (click)="subScore (2)"></ion-icon></button>
           </ion-col>
      </ion-row>
 
-      <button ion-button block class="reset" (click)="resetScore ()">RESET</button>
+      <button ion-button block class="reset"  type="submit" (click)="resetScore ()">RESET</button>
   </div>
 
  </div>
