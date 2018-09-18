@@ -16,9 +16,10 @@ padding: 0;
         font-size: 1em;
     }
     .grid-container {
-        display: grid;
-        grid-column-gap: 10px;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-direction: row;
+        // grid-column-gap: 10px;
+        // grid-template-columns: auto auto;
         padding: 10px;
         text-align: center;
         width: 100%;
